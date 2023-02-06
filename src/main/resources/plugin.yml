@@ -1,0 +1,13 @@
+name: PartnerItems
+version: '${project.version}'
+main: nl.rubixstudios.partneritems.PartnerItems
+authors: [ Djorr, Tokeee ]
+depend:
+  - Lazarus
+commands:
+  partneritem:
+    description: base command
+  partneritems:
+    description: open gui command
+  portal:
+    description: portal command

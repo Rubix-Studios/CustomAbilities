@@ -1,0 +1,263 @@
+#=========================================================#
+#                      License System                     #
+#=========================================================#
+
+# You need to put here you license key to let this plugin
+# work. If you license key doesn't work contact us on our
+# discord: https://discord.rubixstudios.nl/
+
+LICENSE_KEY: ""
+
+#=========================================================#
+#                 PartnerItems configuration              #
+#=========================================================#
+
+PARTNER_ITEMS:
+  GENERAL:
+    # The permissions that's needed to give partner items
+    PERMISSION: "partneritems.admin"
+    GUI:
+      ENABLE: true
+
+  BLEED_BOMB:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&4&lBleed Bomb"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # How long should the bleed bomb stay on the ground?
+    DURATION: 3
+    # The amount percent extra damage the player receives (higher then 1.00 will give more damage)
+    DAMAGE: 1.03
+    # What the range if of bleed effect from the bleed bomb
+    BLEED_RANGE: 5
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&4&lBleed Bomb"
+      LORE:
+        - "&7Right-click to throw this bomb on the ground."
+        - ""
+        - "&7This bomb will give bleed damage for <duration>s for"
+        - "&7only your faction members in a range of <range> blocks."
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
+  TEAR_OF_BLOOD:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&cTear of &4&lBlood"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # How long should the bleed bomb stay on the ground?
+    DURATION: 3
+    # The amount percent extra damage the player receives (higher then 1.00 will give more damage)
+    DAMAGE: 1.03
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&cTear of &4&lBlood"
+      LORE:
+        - "&7Hit a player with this item to give them bleed effects."
+        - ""
+        - "&7This item will give you bleed damage for <duration>s"
+        - "&7on the enemy player that you hit."
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
+  TELEPORT_PORTAL:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&b&lPortal"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # How long should the teleport portal stand until it will despawn? (If not broken yet)
+    DURATION: 20
+    # After how many hits can the enemy destroy the portal
+    HITS_NEEDED: 25
+    # What's the chance to receiv this item in your inventory (only enemy)
+    CHANCE: 40
+    # What's the range of the blocks that a player needs to be to teleport in base. (By default it will check if the player is in enemy claim so he will be teleported)
+    TELEPORT_RANGE: 25
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&b&lTeleport Portal"
+      LORE:
+        - "&7Place this portal on the ground to activate it."
+        - ""
+        - "&7You can only place this portal in an"
+        - "&fenemy claim&7. When placed, &fall &7faction"
+        - "&7members can instantly &fteleport &7to it"
+        - "&7with &f/portal&7."
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: false
+      # Can the partner item be used in the Warzone?
+      WARZONE: false
+      # Can the partner item be used on the KoTH?
+      KOTH: false
+      # Can the partner item be used on the Conquest?
+      CONQUEST: false
+
+  GRAPPLE_HARPOON:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&e&lGrapple"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # What is the maximum usages a grapple harpoon can have?
+    MAX_USAGES: 64
+    # The maximum distance the player can be grappled (best option is 30/35 or else you receive errors in console)
+    MAX_DISTANCE: 35
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&e&lGrapple Harpoon"
+      LORE:
+        - "&7Charge the grapple harpoon and loose to activate."
+        - ""
+        - "&eUsages: &f<currentUsages>/<maxUsages>"
+        - ""
+        - "&7When you shoot an arrow, you will be pulled"
+        - "&7towards the arrow."
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
+  TNT_BOMBER:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&c&lBomber"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # How long should the TNT bomber stay on the ground?
+    TIME_BEFORE_PLACE_BACK: 5
+    # Check if there is a player naked in the radius of the TNT bomber
+    RADIUS_NAKED_ENEMIES: 5
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&cTNT &8Bomber"
+      LORE:
+        - "&7Place this item on the ground to activate it."
+        - ""
+        - "&7If this bomb has been exploded, it will place all"
+        - "&7the blocks back after <time>s. "
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
+  REVERSE_BOW:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&d&lReverse"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # Item used for this partner item
+    MAX_USAGES: 64
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&d&lReverse Bow"
+      LORE:
+        - "&7With a &fleft-click &7you can &finstantly &7shoot a"
+        - "&ffull-powered &7arrow."
+        - ""
+        - "&eUsages: &f<currentUsages>/<maxUsages>"
+        - ""
+        - "&7When someone has been hit by a reverse arrow, the"
+        - "&7player will be rotated 180 degrees."
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
+  PARALYZED_HOE:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&5&lParalyze"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # Item used for this partner item
+    MAX_USAGES: 64
+    # How long should the player be paralyzed?
+    DURATION: 45
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&5&lParalyzed Hoe"
+      LORE:
+        - "&7Blocks &fpart &7of the central &fnervous &7system."
+        - ""
+        - "&eUsages: &f<currentUsages>/<maxUsages>"
+        - ""
+        - "&7When an &fenemy &7has been &fhit&7, it sets"
+        - "&7their enemy &fSpecial &7cooldown to &f45s&7."
+        - ""
+        - "&7It also &fforces &7them to &flook down&7!"
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
+  FORCE_FIELD:
+    # What name should we display on in the chat?
+    DISPLAY_NAME: "&b&lForce"
+    # What should be the item cooldown in seconds?
+    COOLDOWN: 1
+    # How long should the force field warm up before it will be activated?
+    WARM_UP: 5
+    # How far should the force field shoot players away?
+    SHOOT_RANGE: 6
+    # Item used for this partner item
+    ITEM:
+      ENCHANTED_GLOW: false
+      NAME: "&b&lForce Field"
+      LORE:
+        - "&7With a right-click you can activate the force field."
+        - ""
+        - "&7When activated the force field will warm up for &f5s&7."
+        - "&7After the warm up, the force field will shoot all enemies"
+        - "&7away from your location in a range of 5."
+        - ""
+        - "&7Your faction members will not be affected by the force field."
+    IS_ENABLED_ON:
+      # Can the partner item be used in the Wilderness?
+      WILDERNESS: true
+      # Can the partner item be used in the Warzone?
+      WARZONE: true
+      # Can the partner item be used on the KoTH?
+      KOTH: true
+      # Can the partner item be used on the Conquest?
+      CONQUEST: true
+
